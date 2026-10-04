@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FERCHIS FM 💛</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="audio"></audio>
+
+
+<!-- =====================================================
+     BARRA DE MÚSICA
+===================================================== -->
+
+<div id="barraMusica" class="barra-musica">
+
+    <div class="mini-disco">
+        <div class="mini-centro">FM</div>
+    </div>
+
+    <div class="info-barra">
+
+        <span>♪ SONANDO PARA MI NIÑA</span>
+
+        <strong id="barraTitulo">
+            Nuestra primera canción 💛
+        </strong>
+
+    </div>
+
+    <button id="barraAnterior">⏮</button>
+
+    <button id="barraPlay" class="play-barra">
+        ▶
+    </button>
+
+    <button id="barraSiguiente">
+        ⏭
+    </button>
+
+    <input
+        type="range"
+        id="barraVolumen"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.5"
+    >
+
+</div>
+
+
+<!-- =====================================================
+     INICIO
+===================================================== -->
+
+<section id="inicio" class="pantalla">
+
+    <div class="ruido"></div>
+
+    <div class="estudio">
+
+        <div class="on-air">
+
+            <span class="luz"></span>
+
+            ON AIR
+
+        </div>
+
+
+        <div class="frecuencia">
+
+            <p class="pequeno">
+                TRANSMISIÓN EXCLUSIVA PARA MI NIÑA
+            </p>
+
+            <h1>
+                FERCHIS FM
+            </h1>
+
+            <div class="linea"></div>
+
+            <h2>
+                98.7 MHz
+            </h2>
+
+            <p class="subtitulo">
+                La frecuencia donde vive nuestro amor ❤️
+            </p>
+
+        </div>
+
+
+        <div class="frase-inicio">
+
+            <p>
+                “Hay millones de frecuencias en el mundo...”
+            </p>
+
+            <p>
+                “millones de canciones...”
+            </p>
+
+            <p>
+                “millones de historias...”
+            </p>
+
+            <p class="frase-final">
+
+                “pero mi corazón solamente necesitaba
+                una que llevara hasta mi Ferchis.” 🥺❤️
+
+            </p>
+
+        </div>
+
+
+        <button id="sintonizar">
+
+            📻
+
+            SINTONIZAR 98.7 FM
+
+            ♡
+
+        </button>
+
+
+        <p class="instruccion">
+            Ponte cómoda, mi niña bonita... 🌙
+        </p>
+
+        <p class="instruccion pequeña">
+            Esta transmisión fue hecha solamente para ti. 💛
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 01
+===================================================== -->
+
+<section id="programa1" class="programa oculto">
+
+    <div class="contenido-programa">
+
+        <p class="numero-programa">
+            PROGRAMA 01 · TRANSMISIÓN PARA MI NIÑA
+        </p>
+
+        <h2>
+            Buenas dias, Ferchis 🌙
+        </h2>
+
+        <div class="microfono">
+            🎙️
+        </div>
+
+
+        <div class="mensaje">
+
+            <p>
+                “Buenas dias, mi niña...”
+            </p>
+
+            <p>
+                “Si estás escuchando esto,
+                significa que encontraste la pequeña estación
+                que tu Vampii hizo especialmente para ti.” 🧛🏻‍♂️❤️
+            </p>
+
+            <p>
+                “Y sí... todo esto es para ti, mi Ferchis.”
+            </p>
+
+            <p>
+                “Porque hay cosas que tu niño a veces
+                no sabe cómo decirte cuando te tiene enfrente...”
+            </p>
+
+            <p>
+                “Así que decidí esconderlas entre canciones,
+                recuerdos, cartas y pequeños pedacitos de mi corazón.”
+            </p>
+
+            <p class="destacado">
+                “Bienvenida a FERCHIS FM, mi niña bonita.” 💛
+            </p>
+
+            <p>
+                “La única estación donde cada canción,
+                cada palabra y cada detalle
+                tiene un poquito de nosotros.” 🥺
+            </p>
+
+            <p>
+                “Ponte cómoda, lechuzina...
+                porque tu Vampii preparó todo esto
+                pensando en ti.” 🦉❤️
+            </p>
+
+        </div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(2)"
+            >
+                CONTINUAR, MI NIÑA ♡
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 02 - MÚSICA
+===================================================== -->
+
+<section
+    id="programa2"
+    class="programa programa-musica oculto"
+>
+
+    <div class="contenido-musica">
+
+        <p class="numero-programa">
+            PROGRAMA 02 · NUESTRA MÚSICA
+        </p>
+
+        <h2>
+            Canciones que hablan de nosotros 🎵
+        </h2>
+
+        <p class="intro-musica">
+
+            Hay canciones que simplemente escuchamos...
+            <br>
+            y hay canciones que empiezan a tener
+            tu nombre, mi niña. ❤️
+
+        </p>
+
+
+        <div class="tocadiscos">
+
+            <div class="disco" id="disco">
+
+                <div class="disco-linea linea1"></div>
+                <div class="disco-linea linea2"></div>
+                <div class="disco-linea linea3"></div>
+
+                <div class="centro-disco">
+
+                    <span>
+                        FERCHIS
+                    </span>
+
+                    <small>
+                        FM
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="brazo">
+
+                <div class="cabeza-brazo"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="cancion-info">
+
+            <p class="reproduciendo">
+                ♪ SONANDO PARA MI NIÑA
+            </p>
+
+            <h3 id="tituloCancion">
+                Nuestra primera canción 💛
+            </h3>
+
+            <p
+                id="dedicatoriaCancion"
+                class="dedicatoria"
+            >
+                “Esta canción es para ti, mi niña bonita...”
+            </p>
+
+        </div>
+
+
+        <div
+            class="ecualizador"
+            id="ecualizador"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+
+        <div class="controles-musica">
+
+            <button id="anterior">
+                ⏮
+            </button>
+
+            <button
+                id="play"
+                class="boton-play"
+            >
+                ▶
+            </button>
+
+            <button id="siguienteCancion">
+                ⏭
+            </button>
+
+        </div>
+
+
+        <div class="volumen">
+
+            <span>🔈</span>
+
+            <input
+                type="range"
+                id="volumen"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+            >
+
+            <span>🔊</span>
+
+        </div>
+
+
+        <p class="seleccion">
+            LAS CANCIONES DE MI NIÑA 🎵
+        </p>
+
+
+        <div
+            id="listaCanciones"
+            class="lista-canciones"
+        ></div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(1)"
+            >
+                ← VOLVER CON MI NIÑA
+            </button>
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(3)"
+            >
+                NUESTROS RECUERDOS →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 03 - RECUERDOS
+===================================================== -->
+
+<section
+    id="programa3"
+    class="programa programa-recuerdos oculto"
+>
+
+    <div class="contenido-recuerdos">
+
+        <p class="numero-programa">
+            PROGRAMA 03 · ARCHIVO ESPECIAL
+        </p>
+
+        <h2>
+            Archivo de recuerdos 📸
+        </h2>
+
+        <p class="intro-recuerdos">
+
+            Porque algunas fotografías solamente guardan
+            momentos...
+            <br>
+            pero estas guardan pedacitos de nosotros. 🥺❤️
+
+        </p>
+
+
+        <div class="cassette">
+
+            <div class="cassette-label">
+
+                <span>
+                    FERCHIS FM
+                </span>
+
+                <strong>
+                    ARCHIVO Nº 01
+                </strong>
+
+                <small>
+                    MI NIÑA · MI HISTORIA · NOSOTROS
+                </small>
+
+            </div>
+
+
+            <div class="carrete carrete1">
+                ●
+            </div>
+
+            <div class="carrete carrete2">
+                ●
+            </div>
+
+            <div class="cinta"></div>
+
+        </div>
+
+
+        <div class="galeria">
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo1.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 01 ❤️
+                    </span>
+
+                    <p>
+                        Un momento que guardaría 
+                        una y otra vez.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo2.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 02 🥺
+                    </span>
+
+                    <p>
+                        Porque hasta los momentos sencillos
+                        contigo se sienten especiales.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo3.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 03 💛
+                    </span>
+
+                    <p>
+                        Una pequeña memoria de mi niña
+                        que quiero guardar para siempre.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo4.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 04 🌙
+                    </span>
+
+                    <p>
+                        Otro pedacito de nuestra historia,
+                        de esos que hacen sonreír al Vampii.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo5.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 05 🦉
+                    </span>
+
+                    <p>
+                        Porque mi lechuzina merece tener
+                        un lugar especial aquí.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="foto">
+
+                <img
+                    src="fotos/recuerdo6.jpeg"
+                    alt="Recuerdo de Ferchis"
+                >
+
+                <div class="pie-foto">
+
+                    <span>
+                        RECUERDO 06 ❤️
+                    </span>
+
+                    <p>
+                        Y este archivo todavía está incompleto...
+                        porque todavía nos faltan muchísimos recuerdos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="frase-recuerdos">
+
+            <p>
+                “Si algún día mi niña olvida lo mucho que
+                significa para su Vampii, solamente tendrá
+                que abrir este archivo.” 🥺❤️
+            </p>
+
+        </div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(2)"
+            >
+                ← NUESTRAS CANCIONES
+            </button>
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(4)"
+            >
+                CARTITAS PARA MI NIÑA →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 04 - CARTAS
+===================================================== -->
+
+<section
+    id="programa4"
+    class="programa programa-cartas oculto"
+>
+
+    <div class="contenido-cartas">
+
+        <p class="numero-programa">
+            PROGRAMA 04 · CORRESPONDENCIA DE MI CORAZÓN
+        </p>
+
+        <h2>
+            Cartas para mi niña 💌
+        </h2>
+
+        <p class="intro-cartas">
+
+            Hay cosas que tu Vampii siente que no caben
+            en un mensaje...
+            <br>
+            así que las escondí aquí para ti. ❤️
+
+        </p>
+
+
+        <div class="sobres">
+
+            <button
+                class="sobre"
+                onclick="abrirCarta(1)"
+            >
+
+                <span class="sello">
+                    💌
+                </span>
+
+                <strong>
+                    CARTA #01
+                </strong>
+
+                <small>
+                    Para cuando me extrañes
+                </small>
+
+            </button>
+
+
+            <button
+                class="sobre"
+                onclick="abrirCarta(2)"
+            >
+
+                <span class="sello">
+                    🌙
+                </span>
+
+                <strong>
+                    CARTA #02
+                </strong>
+
+                <small>
+                    Para cuando tengas un día difícil
+                </small>
+
+            </button>
+
+
+            <button
+                class="sobre"
+                onclick="abrirCarta(3)"
+            >
+
+                <span class="sello">
+                    ❤️
+                </span>
+
+                <strong>
+                    CARTA #03
+                </strong>
+
+                <small>
+                    Para cuando dudes de cuánto te amo
+                </small>
+
+            </button>
+
+
+            <button
+                class="sobre"
+                onclick="abrirCarta(4)"
+            >
+
+                <span class="sello">
+                    🥺
+                </span>
+
+                <strong>
+                    CARTA #04
+                </strong>
+
+                <small>
+                    Para cuando necesites recordar lo nuestro
+                </small>
+
+            </button>
+
+
+            <button
+                class="sobre"
+                onclick="abrirCarta(5)"
+            >
+
+                <span class="sello">
+                    💛
+                </span>
+
+                <strong>
+                    CARTA #05
+                </strong>
+
+                <small>
+                    Para nuestro futuro
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="cartaAbierta"
+            class="carta-abierta oculto"
+        >
+
+            <div class="papel-carta">
+
+                <button
+                    class="cerrar-carta"
+                    onclick="cerrarCarta()"
+                >
+                    ×
+                </button>
+
+                <p class="encabezado-carta">
+                    FERCHIS FM · SOLO PARA MI NIÑA
+                </p>
+
+                <h3 id="tituloCarta">
+                    Para ti ❤️
+                </h3>
+
+                <div
+                    id="textoCarta"
+                    class="texto-carta"
+                ></div>
+
+                <p class="firma-carta">
+
+                    Con muchísimo cariño,
+
+                    <br>
+
+                    tu Vampii 🧛🏻‍♂️❤️
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(3)"
+            >
+                ← NUESTROS RECUERDOS
+            </button>
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(5)"
+            >
+                HAY ALGO SECRETO... →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 05 - FRECUENCIA SECRETA
+===================================================== -->
+
+<section
+    id="programa5"
+    class="programa programa-secreto oculto"
+>
+
+    <div class="contenido-secreto">
+
+        <p class="numero-programa">
+            TRANSMISIÓN RESTRINGIDA 🔐
+        </p>
+
+        <h2>
+            Hay una frecuencia que solamente tú puedes encontrar...
+        </h2>
+
+
+        <div class="radio-secreto">
+
+            <div class="pantalla-radio">
+
+                <span>
+                    FRECUENCIA ESPECIAL
+                </span>
+
+                <strong>
+                    07.09.2026
+                </strong>
+
+            </div>
+
+
+            <div class="perilla">
+                ◉
+            </div>
+
+        </div>
+
+
+        <p class="secreto-texto">
+
+            “Hay fechas que solamente son fechas...”
+
+            <br><br>
+
+            “y hay fechas que para tu Vampii
+            significan muchísimo más.” ❤️
+
+        </p>
+
+
+        <button
+            id="activarSecreto"
+            class="boton-secreto"
+        >
+            ✨ ACTIVAR FRECUENCIA 07.09.2026
+        </button>
+
+
+        <div
+            id="mensajeSecreto"
+            class="mensaje-secreto oculto"
+        >
+
+            <div class="estrellas">
+                ✦　✧　★　✦　✧　★　✦
+            </div>
+
+            <p>
+                07 · 09 · 2026
+            </p>
+
+            <h3>
+                La fecha que mi corazón decidió guardar. ❤️
+            </h3>
+
+            <p>
+                “De todas las fechas que existen en el calendario,
+                hay algunas que simplemente pasan... y hay otras
+                que se quedan a vivir dentro de nosotros.”
+            </p>
+
+            <p>
+                “Esta es una de ellas, mi niña.”
+            </p>
+
+            <p>
+                “Y si algún día me preguntas por qué
+                la recuerdo tanto...”
+            </p>
+
+            <p>
+                “La respuesta probablemente sea muy sencilla:
+                porque estabas tú.” 🥺
+            </p>
+
+            <p class="grande">
+                Tú y yo. ❤️
+            </p>
+
+        </div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(4)"
+            >
+                ← MIS CARTITAS
+            </button>
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(6)"
+            >
+                SI PUDIERA DETENER EL TIEMPO →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 06 - TIEMPO
+===================================================== -->
+
+<section
+    id="programa6"
+    class="programa programa-tiempo oculto"
+>
+
+    <div class="contenido-tiempo">
+
+        <p class="numero-programa">
+            PROGRAMA 06 · UNA CONFESIÓN DE TU VAMPII
+        </p>
+
+        <h2>
+            Si pudiera detener el tiempo... ⏳
+        </h2>
+
+
+        <div class="reloj">
+
+            <div class="aguja"></div>
+
+            <span>
+                XII
+            </span>
+
+            <span>
+                III
+            </span>
+
+            <span>
+                VI
+            </span>
+
+            <span>
+                IX
+            </span>
+
+        </div>
+
+
+        <div class="texto-tiempo">
+
+            <p>
+                Si pudiera detener el tiempo, probablemente
+                no elegiría un momento perfecto.
+            </p>
+
+            <p>
+                Elegiría uno de esos momentos pequeños que quizá
+                para el mundo no significan nada, pero que para
+                tu Vampii significan muchísimo.
+            </p>
+
+            <p>
+                Uno donde estés sonriendo. 🥺
+            </p>
+
+            <p>
+                Uno donde estés hablando conmigo y yo esté
+                pensando en lo bonito que es simplemente
+                tenerte cerca.
+            </p>
+
+            <p>
+                Porque contigo entendí algo:
+                que la felicidad no siempre llega haciendo ruido.
+            </p>
+
+            <p class="destacado">
+                A veces la felicidad simplemente se sienta
+                a nuestro lado y sonríe.
+            </p>
+
+            <p>
+                Y si esa felicidad eres tú, mi niña...
+                entonces no necesito pedirle demasiadas
+                cosas a la vida.
+            </p>
+
+            <p>
+                Solo quiero seguir acumulando momentos contigo.
+            </p>
+
+            <p>
+
+                Más canciones. 🎵
+
+                <br>
+
+                Más fotografías. 📸
+
+                <br>
+
+                Más risas. 😂
+
+                <br>
+
+                Más conversaciones. 🌙
+
+                <br>
+
+                Más recuerdos. ❤️
+
+                <br>
+
+                Más nosotros. 🥺
+
+            </p>
+
+            <p class="grande">
+                Más tú. 💛
+            </p>
+
+            <p>
+                Porque si algún día pudiera pedirle algo al tiempo,
+                solamente le pediría que fuera amable con nosotros.
+            </p>
+
+            <p>
+                Que nos dejara seguir escribiendo nuestra historia,
+                poquito a poquito, canción por canción,
+                recuerdo por recuerdo.
+            </p>
+
+            <p>
+                Y sobre todo, que me dejara seguir diciéndote
+                algo que nunca quiero que olvides:
+                te amo, mi niña bonita. ❤️
+            </p>
+
+        </div>
+
+
+        <div class="navegacion">
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(5)"
+            >
+                ← FRECUENCIA SECRETA
+            </button>
+
+            <button
+                class="siguiente"
+                onclick="mostrarPrograma(7)"
+            >
+                ÚLTIMA TRANSMISIÓN →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMA 07 - FINAL
+===================================================== -->
+
+<section
+    id="programa7"
+    class="programa programa-final oculto"
+>
+
+    <div class="final-radio">
+
+        <div
+            id="ruidoFinal"
+            class="ruido-final"
+        ></div>
+
+        <p class="final-pequeno">
+            SEÑAL PERDIDA...
+        </p>
+
+        <div class="puntos">
+            ...　...　...
+        </div>
+
+        <p class="transmision">
+            TRANSMISIÓN FINAL
+        </p>
+
+        <div class="final-linea"></div>
+
+        <h1>
+            VAMPII
+            <span>♡</span>
+            FERCHIS
+        </h1>
+
+        <p class="fecha-final">
+            07 · 09 · 2026
+        </p>
+
+        <p class="final-frase">
+            Nuestra historia comenzó aquí. ❤️
+        </p>
+
+        <div class="corazon-final">
+            ♡
+        </div>
+
+        <p class="firma-final">
+            FERCHIS FM
+        </p>
+
+        <p class="ultima-frase">
+            Siempre transmitiendo para mi niña. 🌙
+        </p>
+
+        <button
+            class="volver-inicio"
+            onclick="volverAlInicio()"
+        >
+            ↻ VOLVER A ESCUCHAR NUESTRA HISTORIA
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
